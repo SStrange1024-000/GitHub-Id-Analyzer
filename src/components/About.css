@@ -1,0 +1,106 @@
+.mainAbout{
+    width: 100%;
+    background-color: #F39600;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    padding: 0 clamp(10px, 2vw, 20px);
+}
+
+.backBtn{
+    width: clamp(30px, 4vw, 50px);
+    height: clamp(30px, 4vw, 50px);
+    background-color: #fff;
+    border-radius: 50%;
+    overflow: hidden;
+    border: none;
+    box-shadow: 1px 2px 3px rgb(0, 0, 0, 0.25);
+    cursor: pointer;
+    margin: 5px clamp(10px, 2vw, 20px);
+}
+.backBtn:active{
+    box-shadow: 1px 2px 3px rgb(0, 0, 0, 0.25) inset;
+
+}
+
+ .backIcon{
+    width: 100%;
+    height: 100%;
+    color: #F39600;
+ }
+
+ .aboutTitle{
+    font-size: clamp(30px, 4vw, 50px);
+    color: #fff;
+    text-shadow: 1px 2px 3px rgb(0, 0, 0, 0.25);
+    margin-left: clamp(20px,4vw,50px);
+ }
+
+ .aboutContents{
+    width: 80%;
+    margin: 0px auto;
+    display: flex;
+   
+    align-items: center;
+    padding: clamp(20px, 4vw, 40px);
+ }
+ .discription{
+    width: clamp(200px, 400vw, 600px);
+    color: #fff;
+    padding: 10px;
+ }
+
+ .discription p{   
+    font-size: clamp(11px, 2vw, 20px);
+ }
+
+ /* overlapping image */
+ .aboutImages{
+   min-width: 150px;
+    width: 100%;
+    padding: clamp(10px, 6vw, 50px);
+    display: flex;
+    overflow: hidden;
+ }
+ 
+ .image1 , .image2{
+   width: clamp(100px,40vw,300px);
+   height: claamp(120px,40vw,360px) ;
+   overflow: hidden;
+   box-shadow: 4px 5px 4px rgb(0,0,0,0.25);
+   border-radius: 3px;
+   cursor: pointer;
+  transition: transform 0.3s ease-in-out; /* smooth animation */
+ }
+
+ .aboutImages div:hover{
+   transform: scale(1.02);
+ }
+
+ .image1 img, .image2 img{
+   width: 100%;
+   height: 100%;
+ }
+
+ .image1{
+   position: relative;
+   top: clamp(10px, 3vw, 100px);
+   left: clamp(30px,8vw, 250px);
+   z-index: 1;
+
+ }
+
+  .image2{
+   position: relative;
+   top: clamp(-20px, 4vw, -20px);
+
+ }
+
+ @media (max-width: 480px) {
+   .aboutContents{
+      flex-wrap: wrap-reverse;
+   }
+ }
+

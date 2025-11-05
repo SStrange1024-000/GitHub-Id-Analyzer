@@ -1,0 +1,78 @@
+/* Navigation Bar */
+nav{
+    width: 100%;
+    background-color: #F39600;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding: clamp(5px, 1vw, 10px) clamp(10px, 2vw, 20px); /* responsive padding */
+    box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.25);
+}
+
+/* Logo */
+.logo {
+    font-size: clamp(25px, 5vw, 35px); /* responsive font size */
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.nav-toggle{
+    color: #ffffff;
+    display: none;
+}
+
+/* Navigation Elements */
+.navElements {
+    display: flex;
+    justify-content: space-between;
+    font-size: clamp(16px, 2vw, 25px); /* responsive font size */
+    font-weight: 400;
+    color: #ffffff;
+    font-family: 'Times New Roman', Times, serif;
+    margin-right: clamp(10px, 3vw, 20px); /* responsive margin */
+    z-index: 10;
+}
+.link {
+  text-decoration: none;
+  color: black; /* or any color you like */
+}
+/* Individual nav items */
+.navElements span {
+    font-size: clamp(16px, 2vw, 25px); /* responsive font size */
+    font-weight: 400;
+    color: #ffffff;
+    cursor: pointer;
+    margin: 0 clamp(5px, 2vw, 10px); /* responsive spacing */
+}
+
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+    nav {
+        padding: clamp(5px, 2vw, 10px);
+    }
+
+    .logo {
+        margin-bottom: clamp(5px, 2vw, 10px);
+    }
+
+    .navElements span {
+        margin: clamp(5px, 2vw, 10px) 10px; /* vertical spacing */
+         font-size: clamp(14px, 4vw, 20px); /* smaller font on */
+    }
+}  
+
+/* Extra small screens */
+@media (max-width: 480px) {
+    .nav-toggle{
+        display: block;
+    }
+
+    .logo {
+        font-size: clamp(20px, 6vw, 28px);
+    }
+
+    .navElements span {
+        font-size: clamp(12px, 5vw, 18px);
+    }
+}

@@ -1,0 +1,282 @@
+.mainHome {
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: clamp(10px, 5vw, 20px);
+    padding-bottom: clamp(10px, 5vw, 20px); /* responsive padding */
+    background: url('../asset/negi2.png');
+    background-size: cover;
+    background-position: top;
+    background-attachment: scroll;
+}
+
+.AppIntro {
+    width: clamp(80%, 60%, 60%); /* responsive width */
+    text-align: center;
+    padding: clamp(10px, 3vw, 20px); /* responsive padding */
+    margin: clamp(10px, 3vw, 50px) auto;
+    margin-bottom: clamp(10px, 3vw, 20px); /* responsive top/bottom margin */
+    letter-spacing: 1px;
+}
+
+.title {
+    color: #fff;
+    font-size: clamp(20px, 5vw, 100px); /* already responsive */
+    margin: clamp(10px, 2vw, 30px) auto; /* responsive top/bottom margin */
+    font-family: 'Keania One';
+}
+
+.AppDesc {
+    color: #fff;
+    font-size: clamp(14px, 3vw, 30px); /* responsive font */
+    margin-bottom: clamp(10px, 2vw, 30px); /* responsive bottom margin */
+}
+
+.btn1 {
+    width: clamp(120px, 30%, 180px); /* responsive width */
+    padding: clamp(8px, 1.5vw, 15px) clamp(5px, 2vw, 25px); /* responsive padding */
+    font-size: clamp(1rem, 2vw, 1.5rem); /* responsive font */
+    border-radius: clamp(8px, 1vw, 12px); /* responsive border radius */
+    background-color: #F39600;
+    border: none;
+    box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.25);
+    margin: clamp(20px, 5vw, 80px) auto clamp(10px, 3vw, 0px); /* responsive top & bottom margin */
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btn1:hover {
+    outline: 2px solid #fff;
+}
+
+
+
+/* main APP */
+
+form{
+    width: 100%;
+    margin-bottom: clamp(20px,3vw,30px);
+}
+
+
+.inputQuery{
+    width: clamp(200px, 50%, 300px);
+    padding: clamp(8px, 1.5vw, 15px) clamp(5px, 2vw, 25px);
+    border-radius: clamp(8px, 1vw, 12px); 
+    font-size: 20px;
+    background-color: #EDE3E3;
+    color: #F39600;    
+    border: none;
+    margin: 0px clamp(20px,3vw,40px);
+}
+
+.mainApp p{
+    color: #fff;
+}
+
+.formContainer{
+    width: 60%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px auto;
+}
+
+.regLogToggleContainer{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    color: #Fff;
+    font-size: clamp(20px, 4vw, 30px);
+}
+
+.regLogToggleContainer h4{
+    cursor: pointer;
+    color: #F39600;
+    background-color: #fff;
+    margin: 0px 10px;
+    padding: 5px 10px;
+    font-size: clamp(15px, 2vw, 30px);
+    font-weight: 700;
+    box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.15);
+}
+
+.formContainer form{
+    width: clamp(300px, 60%,600px);
+    display: flex;
+    flex-direction: column;
+    background-color: #Fff;
+    padding: 20px;
+    margin-top: clamp(30px, 5vw, 50px);
+}
+
+.formContainer form div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.LoggedNotis{
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+    padding: 5px;
+    color: aqua;
+}
+
+.btn2{
+    background-color: #F39600;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    font-size: clamp(1rem, 2vw, 1.5rem);
+    font-weight: 600;
+    border-radius: 15px;
+    margin: 0px 30px;
+    margin-top: 20px;
+    box-shadow: 2px 3px 0px rgba(0, 0, 0, 0.25) inset;
+    cursor: pointer;
+
+}
+
+.btn2:active{
+    box-shadow: 1px 2px 3px rgb(0, 0, 0, 0.25);
+
+}
+
+.inputQuery1{
+    padding: 5px 20px;
+    margin: 10px 5px;
+    background-color: #EDE3E3;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    color: #F39600;
+}
+
+label{
+    color: #F39600;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+/*------------------------- Result CSS----------------------- */
+
+.userIdConatiner{
+    width: 80%;
+    background-color: #F39600;
+    margin: 40px auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.25);
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+.userID{
+    padding: 10px;
+}
+
+
+
+.imgContainer{
+    width: clamp(100px, 15vw, 250px);
+    height: clamp(100px, 15vw, 250px);
+    border-radius: 10px;
+    box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.15);
+    margin: 20px 0px;
+    overflow: hidden;
+    
+}
+
+.imgContainer img{
+    width: 100%;
+    height: 100%;
+}
+.userID h1{
+    font-size: clamp(16px, 4vw, 50px);
+    letter-spacing: 1px;
+}
+
+.userBio{
+    width: 80%;
+    padding: 20px;
+}
+
+.userBio p{
+    margin: 10px 0px;
+    font-size: clamp(14px, 2vw,25px);
+}
+
+
+
+.reposContainer{
+    width: 100%;
+    padding: 10px;
+    margin: 10px auto;
+    
+}
+
+.reposContainer div{
+    background-color: #fff;
+    padding: 10px;
+    color: #F39600;
+    border-radius: 5px;
+    text-align: center;
+    margin: 0px auto;
+}
+
+.reposInfo{
+    width: 100%;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.reposInfo h2{
+    color: #F39600;
+    font-size: 30px;
+    margin: 20px 0px;
+}
+
+.reposButton{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+/* Optional: Mobile tweak */
+@media (max-width: 480px) {
+    .AppIntro {
+        width: 90%;
+        padding: clamp(10px, 5vw, 20px);
+    }
+
+    .title {
+        font-size: clamp(18px, 8vw, 40px);
+        margin: clamp(5px, 3vw, 15px) auto;
+    }
+
+    .AppDesc {
+        font-size: clamp(12px, 5vw, 18px);
+        margin-bottom: clamp(5px, 3vw, 15px);
+    }
+
+    .btn1 {
+        width: 80%;
+        padding: clamp(8px, 3vw, 12px);
+        font-size: clamp(14px, 4vw, 18px);
+        border-radius: clamp(6px, 2vw, 10px);
+        margin: clamp(10px, 5vw, 50px) auto clamp(10px, 3vw, 20px);
+    }
+
+    .userIdConatiner{
+        display: block;
+    }
+
+    .formContainer{
+        width: 80%;
+    }
+}

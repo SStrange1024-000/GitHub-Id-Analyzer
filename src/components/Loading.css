@@ -1,0 +1,8 @@
+.failedMainCSS{
+    width: 100%;
+    padding: 20px auto;
+}
+
+.failedMainCSS h3{
+    font-size: 2rem;
+}
