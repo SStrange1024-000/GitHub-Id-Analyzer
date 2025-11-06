@@ -21,6 +21,7 @@ function MainApp() {
     //   if(!userId) return;
     //   dispatch(fetchAccountData(userId))
     // };
+    
   const handleSearch = (e) => {
     e.preventDefault();
     if (!userId.trim()) return;
@@ -30,9 +31,9 @@ function MainApp() {
     dispatch(fetchReposData(userId));
 
     // Navigate to Result page
-    navigate('/result');
-    
+    navigate('/result');    
   };
+  
 
   return (
     <div className='mainApp mainHome'>
