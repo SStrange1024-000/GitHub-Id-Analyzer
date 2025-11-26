@@ -1,6 +1,7 @@
 import React from 'react';
 import negi from '../asset/negi.png';
 import './HomeSection2.css';
+import { Bar } from 'react-chartjs-2';
 
 function HomeSectoin2() {
   return (
@@ -32,5 +33,6 @@ function HomeSectoin2() {
     </div>
   )
 }
+
 
 export default HomeSectoin2

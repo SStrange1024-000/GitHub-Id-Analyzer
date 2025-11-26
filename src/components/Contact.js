@@ -51,6 +51,7 @@ function Contact() {
                 <p className={notis==='Let1234'? LoggDesign : ''}>{notis}</p>
               </div>
               </form>):(
+                
               <form >
                 <div>
                 <label for='Uname'>Name :</label>

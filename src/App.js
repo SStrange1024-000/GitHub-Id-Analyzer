@@ -7,6 +7,7 @@ import MainApp from './components/MainApp';
 import Contact from './components/Contact';
 import Result from './components/Result'
 import Repos from './components/Repos'
+import DemoChart from './components/DemoChart'
 
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
       {/* <Result/> */}
       {/* <Repos/> */}
       <HomeSectoin2/>
+      <DemoChart/>
     </div>
   );
 }
